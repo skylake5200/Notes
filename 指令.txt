@@ -1,0 +1,29 @@
+cmatrix ----黑客帝国的效果
+export all_proxy="socks5://127.0.0.1:1080" ---pip代理出错的时候
+
+# 自定义指令
+root用户 vim ~/.bashrc
+alias sky='mkdir ./sky'
+source ~/.bashrc
+
+# 解决windows复制过来的文件出现中文乱码
+iconv -f gbk -t UTF-8 文件名 -o 重新定向到的文件名（可以与之前相同或不同）
+
+
+# linux c c++ 编译
+c gcc test.c -o 编译后的可执行文件名称（默认为a.out）
+c++ g++ test.cpp -o 编译后的可执行文件名称（默认为a.out）
+
+本系统已经安装git工具
+本地git仓库在 /usr/gitRepo中
+
+git HTTP地址 https://github.com/skylake5200/NeuralNetwork.git
+    SSH 地址 git@github.com:skylake5200/NeuralNetwork.git
+
+git remote
+
+git remote add name git@github.com:skylake5200/NeuralNetwork.git    将后面那一大串以name表示，别名可以通过git remote查看
+修改别名：git remote 原名称 想要修改成的名称
+删除别名：git remote remove name
+
+origin是默认的分支名称
