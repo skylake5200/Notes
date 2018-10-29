@@ -25,5 +25,3 @@ git remote
 git remote add name git@github.com:skylake5200/NeuralNetwork.git    将后面那一大串以name表示，别名可以通过git remote查看
 修改别名：git remote 原名称 想要修改成的名称
 删除别名：git remote remove name
-
-origin是默认的分支名称
