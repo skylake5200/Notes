@@ -1,6 +1,14 @@
 cmatrix ----黑客帝国的效果
 export all_proxy="socks5://127.0.0.1:1080" ---pip代理出错的时候
 
+# linux下科学上网
+1、安装shadowsocks-qt5
+	sudo add-apt-repository ppa:hzwhuang/ss-qt5
+	sudo apt-get update
+	sudo apt-get install shadowsocks-qt5
+2、配置shadowsockd客户端
+3、在网络中设置代理
+
 # 自定义指令
 root用户 vim ~/.bashrc
 alias sky='mkdir ./sky'
@@ -25,3 +33,12 @@ git remote
 git remote add name git@github.com:skylake5200/NeuralNetwork.git    将后面那一大串以name表示，别名可以通过git remote查看
 修改别名：git remote 原名称 想要修改成的名称
 删除别名：git remote remove name
+
+切换到指定的版本
+使用git log命令，找到你想要的版本的SHA1值 （一大串字符）
+新建一个分支 git branch 新分支名 SHA1值
+切换到新分支 git checkout 新分支名
+在上述操作中，我们新建了一个分支用来拉取历史版本并进行操作，而我们当前的代码即主分支中的代码不受影响
+
+opencv编译指令（使用cmake出错）
+g++ `pkg-config opencv --cflags` your.cpp  -o run `pkg-config opencv --libs`
