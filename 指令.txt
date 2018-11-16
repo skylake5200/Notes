@@ -22,6 +22,10 @@ iconv -f gbk -t UTF-8 文件名 -o 重新定向到的文件名（可以与之前
 c gcc test.c -o 编译后的可执行文件名称（默认为a.out）
 c++ g++ test.cpp -o 编译后的可执行文件名称（默认为a.out）
 
+git在刚刚创建的时候需要创建公钥
+ssh-keygen -t rsa -C "your_email@youremail.com"
+创建成功时，会在~/下生成.ssh隐藏文件 
+
 本系统已经安装git工具
 本地git仓库在 /usr/gitRepo中
 
@@ -42,3 +46,8 @@ git remote add name git@github.com:skylake5200/NeuralNetwork.git    将后面那
 
 opencv编译指令（使用cmake出错）
 g++ `pkg-config opencv --cflags` your.cpp  -o run `pkg-config opencv --libs`
+
+
+# Ubuntu 侧边栏调整
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+gsettings set com.canonical.Unity.Launcher launcher-position Left
