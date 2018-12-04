@@ -51,3 +51,7 @@ export CLASSPATH=$CLASSPATH:jar包的path
 # lucene运行demo
 java org.apache.lucene.demo.IndexFiles -docs 要进行索引的文件夹
 java org.apache.lucene.demo.SearchFiles
+
+# 如何撤销一个合并
+只需要在命令行键入 git merge --abort 指令，你的合并操作就会安全撤销
+
