@@ -48,9 +48,21 @@ opencv编译指令（使用cmake出错）
 g++ `pkg-config opencv --cflags` your.cpp  -o run `pkg-config opencv --libs`
 
 
+# 一般出现无法加载主类这种信息的时候，通常是我们的环境变量配置有问题
+# 一定要用绝对路径
+export CLASSPATH=$CLASSPATH:jar包的path
+
+# lucene运行demo
+java org.apache.lucene.demo.IndexFiles -docs 要进行索引的文件夹
+java org.apache.lucene.demo.SearchFiles
+
+# 如何撤销一个合并
+只需要在命令行键入 git merge --abort 指令，你的合并操作就会安全撤销
+
 # Ubuntu 侧边栏调整
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 gsettings set com.canonical.Unity.Launcher launcher-position Left
 
 # 实验室ubuntu 科学上网中使用到的命令
 genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" --output="autoproxy.pac" --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" --user-rule-from="user-rules.txt"
+
