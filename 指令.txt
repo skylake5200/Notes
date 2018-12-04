@@ -42,3 +42,12 @@ git remote add name git@github.com:skylake5200/NeuralNetwork.git    将后面那
 
 opencv编译指令（使用cmake出错）
 g++ `pkg-config opencv --cflags` your.cpp  -o run `pkg-config opencv --libs`
+
+
+# 一般出现无法加载主类这种信息的时候，通常是我们的环境变量配置有问题
+# 一定要用绝对路径
+export CLASSPATH=$CLASSPATH:jar包的path
+
+# lucene运行demo
+java org.apache.lucene.demo.IndexFiles -docs 要进行索引的文件夹
+java org.apache.lucene.demo.SearchFiles
