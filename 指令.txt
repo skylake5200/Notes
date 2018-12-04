@@ -51,3 +51,6 @@ g++ `pkg-config opencv --cflags` your.cpp  -o run `pkg-config opencv --libs`
 # Ubuntu 侧边栏调整
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 gsettings set com.canonical.Unity.Launcher launcher-position Left
+
+# 实验室ubuntu 科学上网中使用到的命令
+genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" --output="autoproxy.pac" --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" --user-rule-from="user-rules.txt"
